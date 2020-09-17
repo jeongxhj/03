@@ -4,12 +4,12 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int a=0;
-	float b=0;
-	printf("enter an integer: ");
-	scanf("%d", &a);
-	printf("enter a float: ");
-	scanf("%f",&b);
-	printf("integer : %d, float : %f", a, b);
+	char c;
+	int i;
+	
+	printf("input a number:");
+	scanf("%c", &c);
+	i=c-'0';
+	printf("The input number is %i\n",i);
 	return 0;
 }
